@@ -4,18 +4,11 @@ import asyncio
 import random
 """Test file for  output of the wait_n coroutine"""
 
-async def wait_random(max_delay: int = 10)-> int:
-    """Test file rrect output of the wait_n coroutine"""
-    delay = random.uniform(0, max_delay)
-    await asyncio.sleep(delay)
-    return delay
-    
-    
-async def main():
-    """Test file for printing the correc coroutine"""
-    delay = await wait_random()  # Example usage with default max_delay of 10
-    print(f"Waited for {delay:.2f} seconds.")
+import random
+import asyncio
 
-# Running the coroutine
-if __name__ == "__main__":
-    asyncio.run(main())
+async def wait_random(max_delay: int = 10) -> float:
+    """Asynchronous coroutine that waits for a random delay and returns it."""
+    delay = random.uniform(0, max_delay)  # Generate a random float between 0 and max_delay
+    await asyncio.sleep(delay)  # Wait asynchronously for the delay
+    return delay
