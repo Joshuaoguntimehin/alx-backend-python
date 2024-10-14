@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""index net"""
 import asyncio
 
 task_wait_n = __import__('4-tasks').task_wait_n
