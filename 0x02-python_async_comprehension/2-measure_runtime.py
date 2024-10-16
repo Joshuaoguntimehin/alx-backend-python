@@ -16,4 +16,3 @@ async def measure_runtime():
     )
     total_time = time.perf_counter()
     return total_time
-#print(f'Total runtime: {total_time:.2f} seconds')
